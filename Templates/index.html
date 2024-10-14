@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sales Prediction Using Machine Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ADD8E6;
+        }
+        .card {
+            background-color: #87CEEB;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .text-custom {
+            color: #4682B4;
+        }
+        .btn-custom {
+            background-color: #56B3FA;
+            border: none;
+            color: white;
+            border-radius: 5px;
+        }
+        .btn-custom:hover {
+            background-color: #87CEEB;
+        }
+        .form-control-dark {
+            background-color: #F0F0F0;
+            border: 1px solid #ADD8E6;
+            color: #333;
+        }
+        .label-custom {
+            color: #333;
+        }
+        .card-body {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center text-custom" style="color:#4682B4">Sales Prediction Using Machine Learning</h1>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="text-center text-custom">Input All Features Here</h2>
+                <form action="/predict" method="post">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="Item_Identifier" class="form-label label-custom">Item Identifier</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Item_Identifier">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Item_weight" class="form-label label-custom">Item Weight</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Item_weight">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Item_Fat_Content" class="form-label label-custom">Item Fat Content</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Item_Fat_Content">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Item_visibility" class="form-label label-custom">Item Visibility</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Item_visibility">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Item_Type" class="form-label label-custom">Item Type</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Item_Type">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Item_MPR" class="form-label label-custom">Item MPR</label>
+                            <input type="number" step="any"  class="form-control form-control-dark" name="Item_MPR">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Outlet_identifier" class="form-label label-custom">Outlet Identifier</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Outlet_identifier">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Outlet_established_year" class="form-label label-custom">Outlet Established Year</label>
+                            <input type="number" class="form-control form-control-dark" name="Outlet_established_year" value="1900">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Outlet_size" class="form-label label-custom">Outlet Size</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Outlet_size">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="Outlet_location_type" class="form-label label-custom">Outlet Location Type</label>
+                            <input type="number" step="any" class="form-control form-control-dark" name="Outlet_location_type">
+                        </div
